@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet" />
+    <title>D'Bandeng</title>
+    <link rel="stylesheet" href="./styling/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="w-full fixed top-0" id="navbar">
+      <nav class="flex p-3 justify-between bg-white shadow-lg" id="navbarDesktop">
+        <div class="flex items-center">
+          <img src="img/LOGOFIX1.png" alt="logo" />
+          <h1 class="text-4xl text-blue-800 font-salsa">D'Bandeng</h1>
+        </div>
+        <div class="flex items-center">
+          <ul class="lg:flex gap-3 hidden">
+            <li class="font-bold"><a href="#" class="hover:text-blue-800 cursor-pointer ease-in duration-300">HOME</a></li>
+            <li class="font-bold"><a href="#" class="hover:text-blue-800 cursor-pointer ease-in duration-300">ABOUT</a></li>
+            <li class="font-bold"><a href="#" class="hover:text-blue-800 cursor-pointer ease-in duration-300">PRODUCTS & SERVICES</a></li>
+            <li class="font-bold"><a href="#" class="hover:text-blue-800 cursor-pointer ease-in duration-300">NEWS</a></li>
+            <li class="font-bold"><a href="#" class="hover:text-blue-800 cursor-pointer ease-in duration-300">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="lg:flex items-center gap-5 hidden">
+          <button class="border-4 bg-sky-400 hover:bg-sky-600 rounded-full py-4 px-10 ease-in duration-300"><a href="#" class="font-bold text-gray-100">Login</a></button>
+          <button class="border-4 bg-blue-600 hover:bg-blue-500 rounded-full py-4 px-8 ease-in duration-300"><a href="#" class="font-bold text-gray-100">Register</a></button>
+        </div>
+        <button class="lg:hidden flex items-center px-3" id="buttonToggle">
+          <img src="img/more.png" alt="hamburger menu" class="w-10" id="changeMenu" />
+        </button>
+      </nav>
+      <div class="bg-white shadow-lg hidden" id="mobileMenu">
+        <ul class="flex flex-col">
+          <li class="font-bold p-3 hover:bg-cyan-100 hover:text-blue-800 cursor-pointer ease-in duration-300"><a href="#">HOME</a></li>
+          <li class="font-bold p-3 hover:bg-cyan-100 hover:text-blue-800 cursor-pointer ease-in duration-300"><a href="#">ABOUT</a></li>
+          <li class="font-bold p-3 hover:bg-cyan-100 hover:text-blue-800 cursor-pointer ease-in duration-300"><a href="#">PRODUCTS & SERVICES</a></li>
+          <li class="font-bold p-3 hover:bg-cyan-100 hover:text-blue-800 cursor-pointer ease-in duration-300"><a href="#">NEWS</a></li>
+          <li class="font-bold p-3 hover:bg-cyan-100 hover:text-blue-800 cursor-pointer ease-in duration-300"><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="flex gap-3 px-3 pt-3 pb-6">
+          <button class="border-4 bg-sky-400 hover:bg-sky-600 rounded-full py-3 px-10 ease-in duration-300"><a href="#" class="font-bold text-gray-100">Login</a></button>
+          <button class="border-4 bg-blue-600 hover:bg-blue-500 rounded-full py-3 px-8 ease-in duration-300"><a href="#" class="font-bold text-gray-100">Register</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+    <!-- Carousel Start -->
+    <div class="slider w-full relative">
+      <div class="slide hidden">
+        <img src="img/bandeng.png" alt="">
+      </div>
+      <div class="slide hidden">
+        <img src="img/bandeng.png" alt="">
+      </div>
+      <div class="slide hidden">
+        <img src="img/bandeng.png" alt="">
+      </div>
+      <div class="navigation absolute top-1/2 left-1/2 translate-x--1/2 translate-y--1/2 flex justify-between w-full">
+        <a id="BtnPrev" onclick="plusSlides(-1)"></a>
+        <a id="BtnNext" onclick="plusSlides(-1)"></a>
+      </div>
+    </div>
+    <!-- Carousel End -->
+    <script src="script.js"></script>
+  </body>
+</html>
