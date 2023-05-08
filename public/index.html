@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <div class="w-full fixed top-0" id="navbar">
+    <div class="w-full sticky top-0" id="navbar">
       <nav class="flex p-3 justify-between bg-white shadow-lg" id="navbarDesktop">
         <div class="flex items-center">
           <img src="img/LOGOFIX1.png" alt="logo" />
@@ -51,19 +51,19 @@
     </div>
     <!-- Navbar End -->
     <!-- Carousel Start -->
-    <div class="slider w-full relative">
-      <div class="slide hidden">
-        <img src="img/bandeng.png" alt="">
+    <div class="relative w-full top-2" id="Carousel">
+      <div class="slide hidden" id="carouselSlide">
+        <img class="w-full animate-fade" src="img/bandeng.png" alt="Img-Carousel-1">
       </div>
-      <div class="slide hidden">
-        <img src="img/bandeng.png" alt="">
+      <div class="slide hidden" id="carouselSlide">
+        <img class="w-full animate-fade" src="img/bandeng.png" alt="Img-Carousel-2">
       </div>
-      <div class="slide hidden">
-        <img src="img/bandeng.png" alt="">
+      <div class="slide hidden" id="carouselSlide">
+        <img class="w-full animate-fade" src="img/bandeng.png" alt="Img-Carousel-3">
       </div>
-      <div class="navigation absolute top-1/2 left-1/2 translate-x--1/2 translate-y--1/2 flex justify-between w-full">
-        <a id="BtnPrev" onclick="plusSlides(-1)"></a>
-        <a id="BtnNext" onclick="plusSlides(-1)"></a>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y--1/2 flex justify-between w-full">
+        <a class="cursor-pointer p-4 font-bold text-xl text-white bg-black/40 ease-in-out duration-300 hover:bg-black " id="BtnPrev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="cursor-pointer p-4 font-bold text-xl text-white bg-black/40 ease-in-out duration-300 hover:bg-black " id="BtnNext" onclick="plusSlides(1)">&#10095;</a>
       </div>
     </div>
     <!-- Carousel End -->
